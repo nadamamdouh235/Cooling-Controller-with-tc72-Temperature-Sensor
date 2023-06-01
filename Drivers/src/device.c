@@ -1,5 +1,13 @@
 /*
  * device.c
+
+ *
+ *  Created on: Mar 31, 2022
+ *      Author: moham
+ */
+
+/*
+ * device.c
  *
  *  Created on: Mar 31, 2022
  *      Author: moham
@@ -9,12 +17,6 @@
 #include "stm32f4xx.h"
 
 
-float data;
-
-//float Get_Data(void)
-//{
-//	return 100.0;
-//}
 void TC72_Init() {
 
 //	SPI1->CR1 |= (1U << 8);

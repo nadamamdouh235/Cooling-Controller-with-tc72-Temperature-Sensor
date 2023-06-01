@@ -31,11 +31,11 @@
 
 void LCD_Init(void){
 	/*Set LCD_RSPin,LCD_RWPin,LCD_EPin and LCD_DataPort (Pins0-7) as output pins */
-	GPIO_Init(LCD_RSPort,LCD_RSPin,1,0,0);
-	GPIO_Init(LCD_RWPort,LCD_RWPin,1,0,0);
-	GPIO_Init(LCD_EPort,LCD_EPin,1,0,0);
+	GPIO_Init(LCD_RSPort,LCD_RSPin,1,0);
+	GPIO_Init(LCD_RWPort,LCD_RWPin,1,0);
+	GPIO_Init(LCD_EPort,LCD_EPin,1,0);
 	for (int DataPortCounter=0;DataPortCounter<8;DataPortCounter++){
-		GPIO_Init(LCD_DataPort,DataPortCounter,1,1,0);
+		GPIO_Init(LCD_DataPort,DataPortCounter,1,1);
 	}
 	LCD_SendCommand(LCD_EightBits);
 	LCD_SendCommand(LCD_CursorOff);
