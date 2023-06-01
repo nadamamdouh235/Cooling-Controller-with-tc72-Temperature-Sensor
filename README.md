@@ -2,7 +2,7 @@
 # Description
  cooling controller system using STM32 microcontroller with PID control algorithm for temperature regulation.
 # Applied Concepts:
-**Design Patterns**
+**Design Patterns.**
 proxy pattern
 periodic polling 
 # Controller System parameters
